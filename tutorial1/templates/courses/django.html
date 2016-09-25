@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block title %}Curso django{% endblock %}
+
+{% block content %}
+    <p>Tema: {{ tema_django }}</p>
+    <ol>
+        <li>{{ ejem1|addslashes }}</li>
+        <li>{{ ejem2|date:"F l, Y" }}</li>
+    </ol>
+{% endblock %}
